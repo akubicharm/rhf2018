@@ -46,7 +46,7 @@ def sendmsg():
         GET IS NOT AVAILABLE
         """
     else:
-        print json.dumps(request.json)
+        print (json.dumps(request.json))
         for s in ws_list:
             s.send(json.dumps(request.json))
             """
